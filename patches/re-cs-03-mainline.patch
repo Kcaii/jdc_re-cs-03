@@ -503,7 +503,7 @@ HcmV?d00001
 
 diff --git a/target/linux/qualcommax/dts/ipq5018-re-cs-03.dts b/target/linux/qualcommax/dts/ipq5018-re-cs-03.dts
 new file mode 100644
-index 0000000000..16d465448d
+index 0000000000..37f3751205
 --- /dev/null
 +++ b/target/linux/qualcommax/dts/ipq5018-re-cs-03.dts
 @@ -0,0 +1,385 @@
@@ -534,7 +534,7 @@ index 0000000000..16d465448d
 +	};
 +
 +	chosen {
-+		bootargs-append = " swiotlb=1 coherent_pool=2M";
++		bootargs-append = " swiotlb=1 coherent_pool=2M fstools_partname_fallback_scan=1";
 +		stdout-path = "serial0:115200n8";
 +	};
 +
